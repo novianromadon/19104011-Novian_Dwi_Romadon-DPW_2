@@ -1,0 +1,620 @@
+html {
+  scroll-behavior: smooth;
+}
+
+/* Style the header */
+header.top {
+  background-color: #666;
+  background-image: url("https://i1.wp.com/ittelkom-pwt.ac.id/wp-content/uploads/2021/06/Webp.net-resizeimage-4.jpg?fit=1690%2C900&ssl=1");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  border-radius: 30px;
+  box-shadow: 1px -2px 15px #888888;
+  margin-left: 8%;
+  width: 82%;
+  height: 20%;
+  padding-bottom: 33%;
+  font-size: 16px;
+  color: white;
+}
+
+div.hero-text {
+  text-align: left;
+  position: absolute;
+  top: 52%;
+  left: 46%;
+  transform: translate(-50%, -50%);
+}
+
+h3.title-h {
+  color: #cf252b;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  text-align: left;
+  font-size: 30px;
+  width: 60%;
+}
+
+p.sub-h {
+  color :black;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 20px;
+  width: 45%;
+}
+
+.atas {
+  height: 30px;
+  padding-top: 2px;
+  padding-left: 75%;
+  background-color: #e5e5e5;
+}
+
+img.atas-sm {
+  padding-right: 20px;
+}
+
+.content-1 {
+  background-color: #db292f;
+  border-top-left-radius: 28px;
+  border-top-right-radius: 28px;
+  box-shadow: 1px -2px 15px #888888;
+  font-family: "Poppins", Verdana, sans-serif;
+  height: 80px;
+  padding-top: 2%;
+  padding-left: 2%;
+}
+
+td.j5 {
+  padding-right: 40px;
+}
+
+td.j6 {
+  font-family: Poppins;
+}
+
+input[type=text] {
+  width: 185px;
+  height: 30px;
+  border-radius: 12px;
+  -webkit-transition: width .35s ease-in-out;
+  transition: width .35s ease-in-out;
+}
+
+input[type=text]:focus {
+  width: 220px;
+}
+
+.cari {
+  width: 185px;
+	height: 25px;
+	border-radius: 8px;
+	background-color: #E15055;
+	border-style: hidden;
+}
+
+.button {
+  border: none;
+  border-radius: 20px;
+  color: white;
+  padding: 10px 20px;
+  text-align: center;
+  display: inline-block;
+  font-size: 14px;
+  transition-duration: 0.6s;
+  cursor: pointer;
+}
+
+.judul {
+  background-color: #db292f;
+}
+
+.judul:hover {
+  background-color: #3f3c3c;
+  color: white;
+}
+
+.btn {
+  border: none;
+  border-radius: 8px;
+  color: white;
+  padding: 10px 10px;
+  text-align: center;
+  display: inline-block;
+  font-size: 14px;
+  transition-duration: 0.1s;
+  cursor: pointer;
+}
+
+.next {
+  background-color: #db292f;
+}
+
+.next:hover {
+  background-color: #e7d800;
+  color: white;
+}
+
+.pilihan {
+  background-color: #ffffff;
+  box-shadow: 1px -2px 15px #888888;
+  border-radius: 30px;
+  margin-left: 8%;
+  margin-right: 10%;
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+}
+
+.item-pilihan {
+  background-color: rgba(255, 255, 255, 0.8);
+  border-radius: 30px;
+  padding: 40px 20px 20px 20px;
+  margin-bottom: 45px;
+  font-size: 15px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  text-align: left;
+  transition: transform .3s;
+}
+
+.item-pilihan:hover {
+  background-color: #e61c1c;
+  color: white;
+  -ms-transform: scale(1.5); /* IE 9 */
+  -webkit-transform: scale(1.5); /* Safari 3-8 */
+  transform: scale(1.1);
+}
+
+.title-item {
+  font-weight: bold;
+}
+
+.ket-trophy {
+  color: rgb(34, 34, 34);
+  font-style: normal;
+  font-size: 13px;
+}
+
+.btn-pil-item-1 {
+  background-color: #db2c32;
+  border: none;
+  color: white;
+  padding: 10px 10px;
+  text-align: center;
+  display: inline-block;
+  font-size: 11px;
+  cursor: pointer;
+  margin-top: 15px;
+  margin-left: 50px;
+}
+
+.btn-pil-item-2 {
+  background-color: #db2c32;
+  border: none;
+  color: white;
+  padding: 10px 10px;
+  text-align: center;
+  display: inline-block;
+  font-size: 11px;
+  cursor: pointer;
+  margin-top: 26px;
+  margin-left: 40px;
+}
+
+.btn-pil-item-3 {
+  background-color: #db2c32;
+  border: none;
+  color: white;
+  padding: 10px 10px;
+  text-align: center;
+  display: inline-block;
+  font-size: 11px;
+  cursor: pointer;
+  margin-top: 32px;
+  margin-left: 30px;
+}
+
+.btn-pil-item-4 {
+  background-color: #db2c32;
+  border: none;
+  color: white;
+  padding: 10px 10px;
+  text-align: center;
+  display: inline-block;
+  font-size: 11px;
+  cursor: pointer;
+  margin-top: 37px;
+  margin-left: 30px;
+}
+
+.kenapa {
+  background-color: #e0e0e0;
+  border-top-right-radius: 12px;
+  border-bottom-right-radius: 12px;
+  margin-left: 8%;
+  margin-right: 47%;
+  height: 40px;
+}
+
+.kenapa-1 {
+  background-color: #db292f;
+  width: 5px;
+  height: 36px;
+}
+
+.kenapa-t {
+  padding-left: 20px;
+  font-size: 19px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: #1a1a1a;
+}
+
+.why-content {
+  background-color: #ffffff;
+  border-radius: 20px;
+  margin-left: 8%;
+  margin-right: 8%;
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+}
+
+.item-why-content {
+  background-color: white;
+  border: 3px solid #db292f;
+  border-radius: 25px;
+  padding-bottom: 20px;
+  margin-bottom: 45px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  text-align: center;
+  width: 90%;
+  display: grid;
+  grid-template-rows: auto auto;
+}
+
+.up-iwc {
+  background-color: #db292f;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  padding-top: 45px;
+  padding-bottom: 45px;
+  width: 100%;
+  font-weight: bold;
+  font-size: 21px;
+  color: white;
+}
+
+.down-iwc {
+  background-color: white;
+  font-size: 12px;
+  padding-top: 35px;
+  padding-bottom: 1px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.testimoni {
+  background-image: url("https://i.postimg.cc/kDrHZjq2/bg-testimoni.png");
+  background-color: #fce9e9;
+  margin: auto;
+  padding-top: 6px;
+}
+
+.testimoni-t {
+  text-align: center;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 24px;
+}
+
+.kata {
+  background-color: #e0e0e0;
+  border-top-right-radius: 12px;
+  border-bottom-right-radius: 12px;
+  margin-left: 8%;
+  margin-right: 78%;
+  height: 40px;
+}
+
+.kata-1 {
+  background-color: #db292f;
+  width: 5px;
+  height: 36px;
+}
+
+.kata-t {
+  padding-left: 20px;
+  font-size: 19px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: #1a1a1a;
+}
+
+.item-testimoni {
+  border-radius: 20px;
+  margin-left: 8%;
+  margin-right: 8%;
+  display: grid;
+  grid-template-columns: auto auto;
+}
+
+.item-testimoni-1 {
+  background-color: #ffffff;
+  border-radius: 10px;
+  padding-bottom: 80px;
+  margin-bottom: 45px;
+  padding-top: 15px;
+  padding-left: 10px;
+  padding-right: 10px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  text-align: center;
+  width: 60%;
+}
+
+.item-testimoni-2 {
+  background-color: #db292f;
+  border-radius: 10px;
+  padding-bottom: 80px;
+  margin-bottom: 45px;
+  padding-top: 15px;
+  padding-left: 10px;
+  padding-right: 10px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  text-align: center;
+  width: 60%;
+}
+
+.judul-i-t-1 {
+  color: #db292f;
+  font-size: 18px;
+  padding-top: 15px;
+}
+
+.sub-i-t-1 {
+  font-size: 13px;
+  color: #575757;
+}
+
+.ket-i-t-1 {
+  font-size: 11px;
+  padding-top: 10px;
+  color: #575757;
+}
+
+.judul-i-t-2 {
+  color: white;
+  font-size: 18px;
+  padding-top: 15px;
+}
+
+.sub-i-t-2 {
+  font-size: 13px;
+  color: white;
+}
+
+.ket-i-t-2 {
+  font-size: 11px;
+  color: white;
+  padding-top: 10px;
+}
+
+.pojok {
+  background-color: #e0e0e0;
+  border-top-right-radius: 12px;
+  border-bottom-right-radius: 12px;
+  margin-left: 8%;
+  margin-right: 78%;
+  height: 40px;
+}
+
+.pojok-1 {
+  background-color: #db292f;
+  width: 5px;
+  height: 36px;
+}
+
+.pojok-t {
+  padding-left: 20px;
+  font-size: 19px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: #1a1a1a;
+}
+
+.pojok-item {
+  background-color: #ffffff;
+  box-shadow: 1px -2px 15px #888888;
+  border-radius: 30px;
+  margin-left: 8%;
+  margin-right: 10%;
+  display: grid;
+  grid-template-columns: auto auto;
+}
+
+.pojok-item-1 {
+  background-color: #e0e0e0;
+  border-bottom-left-radius: 30px;
+  border-top-left-radius: 30px;
+  padding: 20px 1px 20px 30px;
+  margin-right: 50%;
+  width: 95%;
+  font-size: 15px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  text-align: left;
+}
+
+.btn-pojok-item-2 {
+  border: none;
+  background-color: #f8d4d5;
+  padding: 10px 250px 10px 15px;
+  margin-right: 10px;
+  margin-left: 5%;
+  margin-top: 45px;
+  margin-bottom: 15px;
+  width: 90%;
+  text-align: left;
+  display: inline-block;
+  font-size: 22px;
+  font-weight: bold;
+  transition-duration: 0.1s;
+  cursor: pointer;
+}
+
+.btn-pojok-item-2:hover {
+  color: #db292f;
+}
+
+.td-pojok-item-2 {
+  padding-right: 6%;
+  padding-left: 5%;
+  font-size: 17px;
+}
+
+.btn2-pojok-item-2 {
+  border: none;
+  background-color: #db292f;
+  color: white;
+  padding: 10px 250px 10px 15px;
+  margin-right: 10px;
+  margin-left: 60%;
+  margin-top: 75px;
+  margin-bottom: 15px;
+  width: 40%;
+  text-align: left;
+  display: inline-block;
+  font-size: 18px;
+  transition-duration: 0.1s;
+  cursor: pointer;
+}
+
+.btn2-pojok-item-2:hover {
+  background-color: #e6d224;
+}
+
+.berita {
+  background-color: #e0e0e0;
+  border-top-right-radius: 12px;
+  border-bottom-right-radius: 12px;
+  margin-left: 8%;
+  margin-right: 78%;
+  height: 40px;
+}
+
+.berita-1 {
+  background-color: #db292f;
+  width: 5px;
+  height: 36px;
+}
+
+.berita-t {
+  padding-left: 20px;
+  font-size: 19px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: #1a1a1a;
+}
+
+.acara {
+  background-color: #e0e0e0;
+  border-top-right-radius: 12px;
+  border-bottom-right-radius: 12px;
+  margin-left: 8%;
+  margin-right: 78%;
+  height: 40px;
+}
+
+.acara-1 {
+  background-color: #db292f;
+  width: 5px;
+  height: 36px;
+}
+
+.acara-t {
+  padding-left: 20px;
+  font-size: 19px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: #1a1a1a;
+}
+
+.tv {
+  background-color: #e0e0e0;
+  border-top-right-radius: 12px;
+  border-bottom-right-radius: 12px;
+  margin-left: 8%;
+  margin-right: 78%;
+  height: 40px;
+}
+
+.tv-1 {
+  background-color: #db292f;
+  width: 5px;
+  height: 36px;
+}
+
+.tv-t {
+  padding-left: 20px;
+  font-size: 19px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: #1a1a1a;
+}
+
+.berita-top {
+  background-color: #fce9e9;
+  margin: auto;
+  padding-top: 6px;
+}
+
+.berita-sub {
+  text-align: center;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 24px;
+}
+
+.berita-item {
+  background-color: #ffffff;
+  border-radius: 30px;
+  margin-left: 8%;
+  margin-right: 10%;
+  display: grid;
+  grid-template-columns: auto auto;
+}
+
+.berita-item-1 {
+  background-image: url("https://i0.wp.com/ittelkom-pwt.ac.id/wp-content/uploads/2021/10/DSC09284-scaled.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  
+  padding: 80px 1px 150px 20px;
+  margin-right: 10%;
+  width: 55%;
+  font-size: 15px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  text-align: left;
+}
+
+.berita-item-1-t {
+  color: white;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.berita-item-1-s {
+  color: white;
+  font-size: 12px;
+}
+
+.btn1-berita-item-1 {
+  border: none;
+  background-color: #ffbf00;
+  color: black;
+  padding: 8px 1px 8px 1px;
+  margin-bottom: 15px;
+  width: 20%;
+  text-align: center;
+  display: inline-block;
+  font-size: 14px;
+  transition-duration: 0.1s;
+  cursor: pointer;
+}
+
+/* Style the footer */
+footer {
+  background-color: #777;
+  padding: 10px;
+  text-align: center;
+  color: white;
+}
