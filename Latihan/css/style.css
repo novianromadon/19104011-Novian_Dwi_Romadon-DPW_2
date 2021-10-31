@@ -1,0 +1,154 @@
+* {
+    box-sizing: border-box;
+  }
+  
+body {
+  font-family: 'Poppins';
+  margin: 0;
+}
+  
+/* Header */
+.header {
+  padding: 60px;
+  text-align: center;
+  background: #1abc9c;
+  background-image: url("https://www.pictureeuropa.com/wp-content/uploads/2019/09/4k-nature-wallpapers-ultra-hd-74-2560x1440.jpg");
+  background-position: center;
+  background-size: cover;
+  color: white;
+  line-height: 90%;
+  font-weight: bold;
+}
+
+.header-a {
+  font-size: 65px;
+  position: absolute;
+  left: 24px;
+  top: 67px;
+}
+  
+/* Bar Navigasi */
+.navbar {
+  display: flex;
+  background-color: #e9ac04;
+}
+  
+/* Link Bar Navigasi */
+.navbar a {
+  color: white;
+  padding: 14px 20px;
+  text-decoration: none;
+  text-align: center;
+  border-radius: 50px;
+  margin: auto;
+  transition-duration: 0.5s;
+}
+  
+/* Berubah warna pada hover */
+.navbar a:hover {
+  background-color: #ddd;
+  color: black;
+  font-size: 120%;
+}
+  
+/* Wadah kolom */
+.row {  
+  display: flex;
+  flex-wrap: wrap;
+}
+  
+/* Dua kolom tidak sama bersebelahan */
+/* Sidebar/kolom kiri */
+.side {
+  flex: 30%;
+  background-color: #e9ac04;
+  padding: 20px;
+  margin-top: 1%;
+  border-radius: 20px;
+}
+
+.side-about {
+  text-align: center;
+}
+
+.nama {
+  font-size: 22px;
+  line-height: 20%;
+  font-weight: bold;
+}
+
+.sub-nama {
+  font-size: 16px;
+  line-height: normal;
+}
+
+.side-languages {
+  font-size: 20px;
+}
+
+/* Wadah kotak language */
+.grid-container-languages {
+  display: grid;
+  grid-row-gap: 20px;
+  grid-column-gap: 20px;
+  grid-template-columns: auto auto auto auto;
+  padding: 10px;
+}
+  
+.grid-item-languages {
+  padding: 1px;
+  text-align: center;
+}
+  
+/* Kolom utama */
+.main {
+  flex: 70%;
+  background-color: white;
+  padding: 20px;
+}
+
+.main-top {
+  text-align: center;
+  margin: 181px 50px 181px 50px;
+}
+
+/* Wadah kotak portofolio */
+.grid-container-portfolio {
+  display: grid;
+  grid-row-gap: 20px;
+  grid-column-gap: 20px;
+  grid-template-columns: auto;
+  padding: 10px;
+}
+  
+.grid-item-portfolio {
+  padding: 10px;
+  text-align: center;
+  border-radius: 30px;
+  box-shadow: 1px -2px 15px #888888;
+}
+
+/* Efek zoom dengan hover */
+.zoom {
+  border-radius: 10px;
+  transition: transform .2s;
+}
+  
+.zoom:hover {
+  -ms-transform: scale(1.5); /* IE 9 */
+  -webkit-transform: scale(1.5); /* Safari 3-8 */
+  transform: scale(1.5); 
+}
+  
+/* Footer */
+.footer {
+  padding: 20px;
+  margin-top: 1%;
+  text-align: center;
+  background-color: #e9ac04
+}
+
+.contact {
+  color: black;
+  margin: 10px;
+}
