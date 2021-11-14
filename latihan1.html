@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Latihan JS1</title>
+    </head>
+
+    <body>
+        <script>
+            // Contoh 1
+            alert("Selamat belajar!")
+
+
+            // Contoh 2 (Operator Aritmatika)
+            let bil1 = 5;
+            let bil2 = 2;
+            hasil = bil1 + bil2;   
+            alert(hasil);
+
+            var first = 5;
+            var second = 2;
+            res = first * second;  
+            alert(res);
+
+
+            // Contoh 3 (Operator Assignment)
+            let x = 10;
+            x+=5;
+            console.log(x);
+
+
+            // Contoh 4 (Operator Pembanding)
+            let umur = 20;
+            if (umur <= 20) {
+                console.log("anak-anak");
+            } else {
+                console.log("dewasa");
+            }
+
+
+            // Contoh 5 (Operator Logika)
+            let nilai = 96;
+            if (nilai >= 80) {
+                alert("Nilai A");
+            } else if (nilai >= 70 && nilai < 80) {
+                alert("Nilai B");
+            } else if (nilai >= 60 && nilai < 70) {
+                alert("Nilai C");
+            } else {
+                alert("Nilai D");
+            }
+
+
+            // Contoh 6 (Pengulangan)
+            for (let i =  1; i < 5; i++) {
+                console.log(i);
+            }
+
+            // Contoh Event handler: onclick
+            function inform() {
+                alert("Lanjutkan step berikutnya !")
+            }
+        </script>
+        <form>
+            <input type="button" name="test" value="Click" onclick="inform()">
+        </form><br>
+
+
+        <!--Contoh 7-->
+        <form name="go">
+            <input type="radio" name="C1" onclick="document.bgColor='lightblue'">
+            <input type="radio" name="C1" onclick="document.bgColor='lightyellow'">
+            <input type="radio" name="C1" onclick="document.bgColor='lightgreen'">
+        </form><br>
+
+
+        <!--Contoh 8 (Mengubah menjadi huruf besar)-->
+        <script>
+            var message="Welcome to my site"
+            document.write(message.toUpperCase().bold())
+        </script>
+
+
+        <!--Contoh 9 (Validasi Email)-->
+        <form name="test" onsubmit="checkemail(this.test2.value);return false">
+            <input type="text" size=20 name="test2" placeholder="Masukkan email">
+            <input type="submit" value="Submit">
+        </form>
+        <script type="text/javascript">
+            function checkemail(email) {
+                if (email.indexOf("@") !=-1 && email.indexOf(".") !=-1)
+                alert("Apakah Alamat Email Sudah Benar?")
+                else
+                alert("Penulisan Email Salah!")
+            }
+        </script>
+
+
+        <!--Contoh 10 (Membuka window)-->
+        <script>
+            function bukawindow() {
+                window.open("http://www.google.com","google","width=400,height=300,toolbar=1");
+            }
+        </script>
+        <br>
+        Membuka Window Baru
+        <input type="button" onclick="bukawindow()" value="Open">
+
+
+        <!--Contoh 11 (Alert, Confirm)-->
+        <script type="text/javascript">
+            var x = window.confirm("Anda Yakin?")
+            if (x)
+            window.alert("Selanjutnya")
+            else
+            window.alert("Ulangi lagi sampai kamu bisa menyelesaikannya")
+        </script>
+
+        <!--(Prompt)-->
+        <script type="text/javascript">
+            var y = window.prompt("Masukkan nama anda")
+            window.alert(y)
+        </script>
+    </body>
+</html>
