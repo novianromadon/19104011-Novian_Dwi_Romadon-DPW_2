@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Latihan 4 - jQuery</title>
+    <style>
+        .heading {
+            color: #f00;
+            font-size: 30px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aut, doloremque. Aliquam aut sit, distinctio, cumque mollitia excepturi dolores tempora tempore a eius possimus sapiente odio, quasi exercitationem voluptate! Ex, nobis?</h1>
+    <button id="ganti">Ganti</button>
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <script>
+        // Menambah class pada css
+        $("#ganti").on("click", function() {
+            $("h1").addClass("heading");
+        })
+    </script>
+</body>
+</html>

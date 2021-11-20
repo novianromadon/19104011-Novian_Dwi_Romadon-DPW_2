@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Latihan 1 - jQuery</title>
+</head>
+<body>
+    <p class="test">Hello!</p>
+    <input type="text" name="nama" id="nama" style="position:absolute;">
+    </br>
+    <h1>Hover</h1>
+    <button>Coba Geser</button>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script>
+    // Hide Selector (Jika di klik akan menutup/hide)
+    $("p").click(function() {
+        $(this).hide();
+    });
+
+    // Focus (Jika di klik, kolom input akan memanjang)
+    $("#nama").focus(function() {
+        $(this).css("width", "300px");
+    });
+
+    // Jika di klik, kolom input akan bergeser
+    $("button").click(function(){
+        $("input").animate({left: '250px'});
+    });
+
+    // Hover (Jika pointer diarahkan, h1 akan menutup/hide)
+    $("h1").hover(function() {
+        $(this).hide();
+    });
+    </script>
+
+</body>
+</html>
