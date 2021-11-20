@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Latihan 2 - jQuery</title>
+</head>
+<body>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eaque, saepe eos blanditiis animi iste sapiente similique, dolorem, nobis voluptatem aspernatur in modi perspiciatis ut corrupti quae a et rerum dolore?</p>
+    <button id="hide">Hide</button>
+    <button id="show">Show</button>
+    <button id="toggle">Toggle</button>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <script>
+    // Fungsi hide() and show()
+    $("#hide").on("click", function() {
+        $("p").hide();
+      })
+    
+    $("#show").on("click", function() {
+        $("p").show();
+    })
+
+    
+    // Fungsi Toggle
+    $("#toggle").on("click", function() {
+        $("p").toggle();
+    });
+    </script>
+</body>
+</html>

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Latihan 3 - jQuery</title>
+</head>
+<body>
+    <input type="number" name="bil1" id="bil1">
+    <input  type="number" name="bil2" id="bil2">
+    <input  type="button" value="tambah" id="btnTambah">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <script>
+        // Kalkulator tambah sederhana
+        $("#btnTambah").on("click", function() {
+            let bil1 = $("#bil1").val();
+            let bil2 = $("#bil2").val();
+            let hasil = parseInt(bil1) + parseInt(bil2);
+
+            alert("Hasil " + hasil);
+        });
+    </script>
+</body>
+</html>

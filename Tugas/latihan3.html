@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Latihan 3 - jQuery</title>
+</head>
+<body>
+    <h1>Kalkulator Sederhana</h1>
+
+    <input type="number" name="bil1" id="bil1">
+    <input type="number" name="bil2" id="bil2">
+    <input type="button" value="Tambah" id="btnTambah">
+
+    <br>
+    <br>
+
+    <input type="number" name="bil3" id="bil3">
+    <input type="number" name="bil4" id="bil4">
+    <input type="button" value="Kurang" id="btnKurang">
+
+    <br>
+    <br>
+
+    <input type="number" name="bil5" id="bil5">
+    <input type="number" name="bil6" id="bil6">
+    <input type="button" value="Kali" id="btnKali">
+
+    <br>
+    <br>
+
+    <input type="number" name="bil7" id="bil7">
+    <input type="number" name="bil8" id="bil8">
+    <input type="button" value="Bagi" id="btnBagi">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <script>
+        // Perhitungan tambah
+        $("#btnTambah").on("click", function() {
+            let bil1 = $("#bil1").val();
+            let bil2 = $("#bil2").val();
+            let hasil = parseInt(bil1) + parseInt(bil2);
+
+            alert("Hasil " + hasil);
+        });
+
+        // Perhitungan kurang
+        $("#btnKurang").on("click", function() {
+            let bil3 = $("#bil3").val();
+            let bil4 = $("#bil4").val();
+            let hasil = parseInt(bil3) - parseInt(bil4);
+
+            alert("Hasil " + hasil);
+        });
+
+        // Perhitungan kali
+        $("#btnKali").on("click", function() {
+            let bil5 = $("#bil5").val();
+            let bil6 = $("#bil6").val();
+            let hasil = parseInt(bil5) * parseInt(bil6);
+
+            alert("Hasil " + hasil);
+        });
+
+        // Perhitungan bagi
+        $("#btnBagi").on("click", function() {
+            let bil7 = $("#bil7").val();
+            let bil8 = $("#bil8").val();
+            let hasil = parseInt(bil7) / parseInt(bil8);
+
+            alert("Hasil " + hasil);
+        });
+    </script>
+</body>
+</html>

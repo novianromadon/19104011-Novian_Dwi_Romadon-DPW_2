@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Latihan 2 - jQuery</title>
+</head>
+<body>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eaque, saepe eos blanditiis animi iste sapiente similique, dolorem, nobis voluptatem aspernatur in modi perspiciatis ut corrupti quae a et rerum dolore?</p>
+    <button id="hide">Hide</button>
+    <button id="show">Show</button>
+    <button id="toggle">Toggle</button>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <script>
+    // Fungsi hide() untuk menutup konten
+    $("#hide").on("click", function() {
+        $("p").hide();
+    })
+
+    // Ketika konten tertutup, background akan berwarna coral
+    $("#hide").click(function() {
+        $("body").css("background-color", "coral");
+    });
+    
+    // Fungsi show() untuk menampilkan konten
+    $("#show").on("click", function() {
+        $("p").show();
+    })
+
+    // Ketika konten terbuka, background akan berwarna cornflowerblue
+    $("#show").click(function() {
+        $("body").css("background-color", "cornflowerblue");
+    });
+
+    
+    // Fungsi Toggle untuk menutup dan menampilkan konten
+    $("#toggle").on("click", function() {
+        $("p").toggle();
+    });
+    </script>
+</body>
+</html>
