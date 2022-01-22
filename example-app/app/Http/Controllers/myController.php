@@ -10,4 +10,8 @@ class myController extends Controller
     {
         return view('beranda');
     }
+
+    public function about() {
+        return view('about');
+    }
 }

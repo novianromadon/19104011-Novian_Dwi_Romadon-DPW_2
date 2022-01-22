@@ -18,6 +18,9 @@ Route::get('/', function () {
     return view('welcome');
 });
 
+Route::get('/','MyController@index')->name('index');
+Route::get('/tentang','MyController@about')->name('about');
+
 // Harus melewati Controller dulu
 
 // Ketika kita mengakses url /beranda dengan method GET
