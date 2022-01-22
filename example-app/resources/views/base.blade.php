@@ -19,7 +19,7 @@
                     <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
                         <div class="navbar-nav">
                             <a class="nav-link active" href="{{ route('index') }}">Beranda <span class="sr-only">(current)</span></a>
-                            <a class="nav-link" href="#">Mahasiswa</a>
+                            <a class="nav-link" href="{{ route('mahasiswa') }}">Mahasiswa</a>
                             <a class="nav-link" href="{{ route('about') }}">About</a>
                         </div>
                     </div>
@@ -30,6 +30,7 @@
             <div class="col-lg-12">
                 <div class="card">
                     <div class="card-body">
+                        <!-- Untuk menampilkan konten dibagian tertentu pada halaman web -->
                         @yield('content')
                     </div>
                 </div>

@@ -1,7 +1,11 @@
-@extends('template.base')
+<!-- untuk menentukan file mana yang diwariskan kedalam file child -->
+@extends('base')
+
+<!-- untuk mendefinisikan isi dari "yield" -->
 @section('content')
-    <h1>Beranda</h1>
+    <h1>Ini Halaman Beranda</h1>
 @endsection
+
 
 
 <?php
@@ -11,6 +15,7 @@
     $nilai = 90;
 ?>
 
+<!--
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -21,8 +26,9 @@
 </head>
 <body>
     <h1>Ini Halaman Beranda</h1>
+-->
 
-    <!-- echo biasa -->
+    <!-- echo biasa
     <?php echo "Halo dunia" ?>
 
     <p>
@@ -108,3 +114,4 @@
 
 </body>
 </html>
+-->

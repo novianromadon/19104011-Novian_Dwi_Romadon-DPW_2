@@ -14,12 +14,23 @@ use App\Http\Controllers\myController;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
 
-Route::get('/','MyController@index')->name('index');
-Route::get('/tentang','MyController@about')->name('about');
+
+
+// Menyambungkan dari navbar Beranda ke beranda.blade.php
+Route::get('/', [MyController::class, 'index'])->name('index');
+
+// Menyambungkan dari navbar About ke about.blade.php
+Route::get('/tentang', [MyController::class, 'about'])->name('about');
+
+// Menyambungkan dari navbar Mahasiswa ke mahasiswa.blade.php
+Route::get('/mahasiswa', [MyController::class, 'mahasiswa'])->name('mahasiswa');
+
+
+
+
+
+
 
 // Harus melewati Controller dulu
 
