@@ -1,8 +1,13 @@
 <?php
 
+> Pertemuan-10
+use App\Http\Controllers\StudentController;
+use Illuminate\Support\Facades\Route;
+=======
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\MyController;
 use App\Http\Controllers\StudentController;
+> main
 
 /*
 |--------------------------------------------------------------------------
@@ -15,12 +20,18 @@ use App\Http\Controllers\StudentController;
 |
 */
 
+> Pertemuan-10
+Route::get('/', function () {
+    return view('welcome');
+});
+=======
 // Route::get('/', function () {
 //     return view('welcome');
 // });
 
 // Menuju ke controller MyController
 Route::get('/', [MyController::class, 'index']);
+> main
 
 Route::get('/mahasiswa', [StudentController::class, 'index']);
 Route::get('/mahasiswa/create', [StudentController::class, 'create']);

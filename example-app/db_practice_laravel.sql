@@ -3,7 +3,11 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
+> Pertemuan-10
+-- Waktu pembuatan: 22 Jan 2022 pada 17.10
+=======
 -- Waktu pembuatan: 23 Jan 2022 pada 05.55
+> main
 -- Versi server: 10.4.22-MariaDB
 -- Versi PHP: 8.1.0
 
@@ -202,7 +206,11 @@ ALTER TABLE `personal_access_tokens`
 -- AUTO_INCREMENT untuk tabel `students`
 --
 ALTER TABLE `students`
+> Pertemuan-10
+  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
+=======
   MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
+> main
 
 --
 -- AUTO_INCREMENT untuk tabel `users`
