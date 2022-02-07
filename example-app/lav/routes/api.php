@@ -2,10 +2,7 @@
 
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
-> Pertemuan-10
-=======
 use App\Http\Controllers\studentApiController;
-> main
 
 /*
 |--------------------------------------------------------------------------
@@ -21,8 +18,6 @@ use App\Http\Controllers\studentApiController;
 Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
     return $request->user();
 });
-> Pertemuan-10
-=======
 
 // Menampilkan data siswa melalui API
 Route::get('/mahasiswa', [studentApiController::class, 'index']);
@@ -37,4 +32,3 @@ Route::put('/mahasiswa/{id}', [studentApiController::class, 'update']);
 
 // Menghapus data siswa melalui API berdasarkan id
 Route::delete('/mahasiswa/{id}', [studentApiController::class, 'delete']);
-> main

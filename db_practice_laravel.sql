@@ -3,11 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
-> Pertemuan-10
--- Waktu pembuatan: 22 Jan 2022 pada 17.10
-=======
--- Waktu pembuatan: 23 Jan 2022 pada 05.55
-> main
+-- Waktu pembuatan: 23 Jan 2022 pada 15.51
 -- Versi server: 10.4.22-MariaDB
 -- Versi PHP: 8.1.0
 
@@ -117,7 +113,8 @@ CREATE TABLE `students` (
 
 INSERT INTO `students` (`id`, `nim`, `name`, `gender`, `departement`, `address`, `created_at`, `updated_at`) VALUES
 (1, 19104011, 'Novian Dwi Romadon', 'L', 'S1 RPL', 'PWT', '2022-01-22 08:48:39', '2022-01-22 08:48:39'),
-(3, 181818, 'Yaya', 'P', 'S1 Sistem Informasi', 'JKT', '2022-01-22 08:50:34', '2022-01-22 08:50:34');
+(3, 18181819, 'Yaya', 'P', 'S1 Sistem Informasi', 'JKT', '2022-01-22 08:50:34', '2022-01-23 07:44:48'),
+(5, 20202020, 'Papa', 'L', 'S1 Informatika', 'BDG', '2022-01-23 07:36:41', '2022-01-23 07:36:41');
 
 -- --------------------------------------------------------
 
@@ -206,11 +203,7 @@ ALTER TABLE `personal_access_tokens`
 -- AUTO_INCREMENT untuk tabel `students`
 --
 ALTER TABLE `students`
-> Pertemuan-10
-  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
-=======
-  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
-> main
+  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
 
 --
 -- AUTO_INCREMENT untuk tabel `users`

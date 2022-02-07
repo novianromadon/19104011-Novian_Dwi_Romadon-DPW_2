@@ -1,13 +1,8 @@
 <?php
 
-> Pertemuan-10
-use App\Http\Controllers\StudentController;
-use Illuminate\Support\Facades\Route;
-=======
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\MyController;
 use App\Http\Controllers\StudentController;
-> main
 
 /*
 |--------------------------------------------------------------------------
@@ -20,20 +15,27 @@ use App\Http\Controllers\StudentController;
 |
 */
 
-> Pertemuan-10
-Route::get('/', function () {
-    return view('welcome');
-});
-=======
 // Route::get('/', function () {
 //     return view('welcome');
 // });
 
-// Menuju ke controller MyController
+// Menuju ke controller MyController pada fungsi index
 Route::get('/', [MyController::class, 'index']);
-> main
 
-Route::get('/mahasiswa', [StudentController::class, 'index']);
+
+
+// Menyambungkan dari navbar Beranda ke beranda.blade.php
+Route::get('/', [MyController::class, 'index'])->name('index');
+
+// Menyambungkan dari navbar About ke about.blade.php
+Route::get('/tentang', [MyController::class, 'about'])->name('about');
+
+// Menyambungkan dari navbar Mahasiswa ke mahasiswa.blade.php
+//Route::get('/mahasiswa1', [MyController::class, 'index'])->name('mahasiswa');
+
+
+
+Route::get('/mahasiswa', [StudentController::class, 'index'])->name('mahasiswa');
 Route::get('/mahasiswa/create', [StudentController::class, 'create']);
 Route::post('/mahasiswa/create', [StudentController::class, 'store']);
 Route::get('/mahasiswa/{id}/edit', [StudentController::class, 'edit']);
